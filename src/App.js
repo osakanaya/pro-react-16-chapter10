@@ -8,6 +8,8 @@ export default function App() {
         Hello Adam
       </h1>
       <Message />
+      <Message />
+      <Message />
     </div>
   )
 }
