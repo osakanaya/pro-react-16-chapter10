@@ -1,5 +1,6 @@
 import React from "react";
 import { Message } from "./Message";
+import { Summary } from "./Summary";
 
 export default function App() { 
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Message />
       <Message />
       <Message />
+      <Summary />
     </div>
   )
 }
