@@ -7,3 +7,8 @@ export function CallbackButton(props) {
         <SimpleButton { ...childProps } className={ `btn btn-${theme} btn-sm m-1`} />
     );
 }
+
+CallbackButton.defaultProps = {
+    text: "Default Text",
+    theme: "warning"
+};
