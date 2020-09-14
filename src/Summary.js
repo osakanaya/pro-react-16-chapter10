@@ -1,16 +1,11 @@
 import React from "react";
 
 function createInnerElements(names) {
-    let arrayElems = [];
-    for(let i = 0; i < names.length; i++) {
-        arrayElems.push(
-            <div>
-                { `${names[i]} contains ${names[i].length} letters`}
-            </div>
-        )
-    }
-
-    return arrayElems;
+    return names.map(name => 
+        <div>
+            { `${name} contains ${name.length} letters`}
+        </div>
+    );
 }
 
 export function Summary(props) {
