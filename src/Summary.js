@@ -1,6 +1,7 @@
 import React from "react";
 
 export function Summary(props) {
+    props.name = `Name: ${props.name}`;
     if (props.name.length >= 4) {
         return <React.Fragment>
             <td>{ props.index + 1 }</td>
