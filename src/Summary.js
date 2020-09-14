@@ -10,6 +10,9 @@ export function Summary(props) {
                 <button className="btn btn-primary btn-sm" onClick={ props.reverseCallback }>
                     Change
                 </button>
+                <button className="btn btn-info btn-sm m-1" onClick={ () => props.promoteCallback(props.name) }>
+                    Promote
+                </button>
             </td>
         </React.Fragment>
     ) 
