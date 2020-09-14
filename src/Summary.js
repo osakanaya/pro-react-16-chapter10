@@ -9,7 +9,7 @@ export function Summary(props) {
             <td>{ props.name.length }</td>
             <td>
                 <CallbackButton callback={ props.reverseCallback } />
-                <CallbackButton theme="info" text="Promote" callback={ () => props.promoteCallback(props.name) } />
+                <CallbackButton theme="info" text="Promote" callback={ () => props.promoteCallback(props.name) } disabled="true" />
             </td>
         </React.Fragment>
     ) 
