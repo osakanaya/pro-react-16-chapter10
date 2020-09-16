@@ -30,15 +30,15 @@ export class SimpleButton extends Component {
 
         this.props.callback();
     }
-}
 
-SimpleButton.defaultProps = {
-    disabled: false
-}
-
-SimpleButton.propTypes = {
-    text: PropTypes.string,
-    theme: PropTypes.string,
-    callback: PropTypes.func,
-    disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
+    static defaultProps = {
+        disabled: false
+    }
+    
+    static propTypes = {
+        text: PropTypes.string,
+        theme: PropTypes.string,
+        callback: PropTypes.func,
+        disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
+    }
 }
