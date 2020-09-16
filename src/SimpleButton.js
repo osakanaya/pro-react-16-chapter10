@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 export class SimpleButton extends Component {
     constructor(props) {
@@ -31,3 +32,13 @@ export class SimpleButton extends Component {
     }
 }
 
+SimpleButton.defaultProps = {
+    disabled: false
+}
+
+SimpleButton.propTypes = {
+    text: PropTypes.string,
+    theme: PropTypes.string,
+    callback: PropTypes.func,
+    disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
+}
