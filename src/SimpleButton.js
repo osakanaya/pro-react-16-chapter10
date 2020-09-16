@@ -24,7 +24,9 @@ export class SimpleButton extends Component {
 
     handleClick = () => {
         this.setState({
-            counter: this.state.counter + 1,
+            counter: this.state.counter + 1
+        });
+        this.setState({
             hasButtonBeenClicked: this.state.counter > 0
         });
 
