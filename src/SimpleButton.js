@@ -10,14 +10,3 @@ export function SimpleButton(props) {
     );
 }
 
-SimpleButton.defaultProps = {
-    disabled: false
-}
-
-SimpleButton.propTypes = {
-    text: PropTypes.string,
-    theme: PropTypes.string,
-    callback: PropTypes.func,
-    disabled: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
-};
-
